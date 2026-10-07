@@ -8,7 +8,7 @@ def test_github_search():
     driver = webdriver.Chrome()
     driver.get("https://github.com/search")
 
-    driver.find_element(By.CSS_SELECTOR, '[aria-label="Search GitHub"]').send_keys("qa-guru", Keys.ENTER)
+    driver.find_element(By.CSS_SELECTOR, '[aria-label="Search GitHub"]').send_keys("qa-gurub", Keys.ENTER)
 
     results = WebDriverWait(driver, 10).until(
     EC.presence_of_element_located((By.CSS_SELECTOR, '[data-testid="results-list"]'))
